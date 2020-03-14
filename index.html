@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="head_foot.css">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="images/icons/logo.png" alt="" width="80" height="50">
+                <p>electrocity</p>
+            </div>
+            <div class="navbar menu" onclick="openNavBar()">
+                <span class="navbar" onclick="openNavBar()"></span>
+                <span class="navbar" onclick="openNavBar()"></span>
+                <span class="navbar" onclick="openNavBar()"></span>
+            </div>
+        </div>
+        <div class="links">
+            <div class="headLinks">
+                <a class="home" href="index.html">Home</a>
+                <a class='openSignup' onclick="openForm('signUp.html')">Sign Up</a>
+                <a class="openLogin" onclick="openForm('login.html')">Login</a>
+                <div><a class="logout">Logout</a>
+                    <span class="logoutConfirm">
+                        <p>Logout from your account <br><a class="cancel">Cancel</a><a class="ok">Ok</a></p>
+                    </span>
+                </div>
+                <p class="userAccount"></p>
+            </div>
+            <div class="searchBar">
+                <input type="search" name="search" id="searchInput">
+                <div class="basket">
+                    <a class="cartSup">
+                        <ion-icon name="cart-outline" size="large"></ion-icon>
+                        <span class="cartNum">0</span>
+                    </a>
+                    <span id="hover">cart</span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="mobiles-pgs/mobiles.html" class="nav">Mobile Phones</a>
+            <hr>
+            <a href="laptops-pgs/laptops.html" class="nav">Laptops</a>
+            <hr>
+            <a href="refrigerators-pgs/ref.html" class="nav">Refrigerators</a>
+        </nav>
+    </header>
+    <section>
+        <img alt="" class="slide">
+        <div class="products">
+            <a class="prodNames" href="mobiles-pgs/mobiles.html"><span class="text"> Mobile
+                    Phones</span></a>
+            <a class="prodImgs" href="mobiles-pgs/mobiles.html"><img src="images/home/home-mobile.png" alt=""></a></div>
+        <div class="products">
+            <a class="prodNames" href="laptops-pgs/laptops.html"><span class="text">Laptops</span></a>
+            <a class="prodImgs" href="laptops-pgs/laptops.html"><img src="images/home/home-laptop.png" alt=""></a></div>
+        <div class="products">
+            <a class="prodNames" href="refrigerators-pgs/ref.html"><span class="text">
+                    Refrigerators</span></a>
+            <a class="prodImgs" href="refrigerators-pgs/ref.html"><img src="images/home/home-fridge.jpg" alt=""></a>
+        </div>
+    </section>
+    <footer>
+        <h1>
+            Follow Us
+        </h1>
+        <div class="followLinks">
+            <div class="follow"><i class="fab fa-facebook-f social"></i></div>
+            <div class="follow"><i class="fab fa-twitter social"></i></div>
+            <div class="follow"><i class="fab fa-instagram social"></i></div>
+            <div class="follow"><i class="fab fa-youtube social"></i></div>
+        </div>
+        <p> &copy; Electrocity 2020</p>
+    </footer>
+    <script src="search.js"></script>
+    <script src="header.js"></script>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/2e67fd70d7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

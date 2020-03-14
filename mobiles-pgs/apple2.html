@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>iPhone 11 Pro</title>
+    <link rel="stylesheet" href="../slide.css">
+    <link rel="stylesheet" href="../head_foot.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    </head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="../images/icons/logo.png" alt="" width="80" height="50">
+                <p>electrocity</p>
+            </div>
+            <div class="navbar menu" onclick="openNavBar()">
+                <span class="navbar"></span>
+                <span class="navbar"></span>
+                <span class="navbar"></span>
+            </div>
+        </div>
+        <div class="links">
+            <div class="headLinks">
+                <a class="home" href="../index.html">Home</a>
+                <a class='openSignup' onclick="openForm('../signUp.html')">Sign Up</a>
+                <a class="openLogin" onclick="openForm('../login.html')">Login</a>
+                <div><a class="logout">Logout</a>
+                    <span class="logoutConfirm">
+                        <p>Logout from your account <br><a class="cancel">Cancel</a><a class="ok">Ok</a></p>
+                    </span>
+                </div>
+                <p class="userAccount"></p>
+            </div>
+            <div class="searchBar">
+                <div class="basket">
+                    <a class="cartSup">
+                        <ion-icon name="cart-outline" size="large"></ion-icon>
+                        <span class="cartNum">0</span>
+                    </a>
+                    <span id="hover">cart</span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="../mobiles-pgs/mobiles.html" class="nav">Mobile Phones</a>
+            <hr>
+            <a href="../laptops-pgs/laptops.html" class="nav">Laptops</a>
+            <hr>
+            <a href="../refrigerators-pgs/ref.html" class="nav">Refrigerators</a>
+        </nav>
+    </header>
+    <section>
+    <div class="itemSpec">
+        <div class="slider">
+            <div class="contain">
+                <div class="slides mobileImg">
+                    <div class="num">1/3</div><img id="itemImage" src="../images/mobiles/apple-2/img1.png" alt=""
+                        width='300'>
+                </div>
+                <div class="slides mobileImg">
+                    <div class="num">2/3</div><img src="../images/mobiles/apple-2/img2.png" alt="" width='300'>
+                </div>
+                <div class="slides mobileImg">
+                    <div class="num">3/3</div><img src="../images/mobiles/apple-2/img3.png" alt="" width='400'>
+                </div>
+
+            </div>
+            <br>
+            <div class="slideShowImg">
+                <span class="slideImg" onclick="current(1)"><img src="../images/mobiles/apple-2/img1.png" alt=""
+                        height="100" width="100"></span>
+                <span class="slideImg" onclick="current(2)"><img src="../images/mobiles/apple-2/img2.png" alt=""
+                        height="100" width="100"></span>
+                <span class="slideImg" onclick="current(3)"><img src="../images/mobiles/apple-2/img3.png" alt=""
+                        height="100" width="100"></span>
+
+            </div>
+            <span class="prev" onclick="runSlides(-1);">&#10094;</span>
+            <span class="next" onclick="runSlides(1);">&#10095;</span>
+
+        </div>
+        <div class="detailSpec">
+            <p><b><span id="name">Apple iPhone 11 Pro</span>  - PTA Approved - 5.8 - 1 Year AirLink Warranty
+                </b> <br>
+                Apple <br>
+                Rs.<span id="itemPrice">275,000</span><br>
+            </p>
+            <h3>
+                Product details of iPhone 11 Pro
+            </h3>
+            <ul>
+                <li>4.7 inches,Retina IPS LCD capacitive touchscreen</li>
+                <li>32GB</li>
+                <li>12 MP Camera, Quad-LED Dual-tone Flash</li>
+                <li>1960 mAh Battery</li>
+                <li>Ion-strengthened glass, oleophobic coating</li>
+                <li>138.3 x 67.1 x 7.1 mm</li>
+            </ul>
+            <div>
+                <span class="quan"> Quantity</span>
+                <div class="buttons"><button id="minusQuantity">-</button><input type="text" value="1"
+                        class="quantity" id="itemQuantity">
+                    <button id="plusQuantity">+</button></div> <br>
+                <div class="cartBtns"><button class="addToCartBtn">Add To Cart</button>
+                    <button class="checkOut">View Cart</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <h1>
+        Follow Us
+    </h1>
+    <div class="followLinks">
+        <div class="follow"><i class="fab fa-facebook-f social"></i></div>
+        <div class="follow"><i class="fab fa-twitter social"></i></div>
+        <div class="follow"><i class="fab fa-instagram social"></i></div>
+        <div class="follow"><i class="fab fa-youtube social"></i></div>
+    </div>
+    <p> &copy; Electrocity 2020</p>
+</footer>
+<script src="../header.js"></script>
+<script src="https://kit.fontawesome.com/2e67fd70d7.js" crossorigin="anonymous"></script>
+<script src="../slide.js"></script>
+</body>
+
+</html>

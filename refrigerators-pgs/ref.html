@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Refrigerators</title>
+    <link rel="stylesheet" href="../head_foot.css">
+    <link rel="stylesheet" href="../css.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="../images/icons/logo.png" alt="" width="80" height="50">
+                <p>electrocity</p>
+            </div>
+            <div class="navbar menu" onclick="openNavBar()">
+                <span class="navbar"></span>
+                <span class="navbar"></span>
+                <span class="navbar"></span>
+            </div>
+        </div>
+        <div class="links">
+            <div class="headLinks">
+                <a class="home" href="../index.html">Home</a>
+                <a class='openSignup' onclick="openForm('../signUp.html')">Sign Up</a>
+                <a class="openLogin" onclick="openForm('../login.html')">Login</a>
+                <div><a class="logout">Logout</a>
+                    <span class="logoutConfirm">
+                        <p>Logout from your account <br><a class="cancel">Cancel</a><a class="ok">Ok</a></p>
+                    </span>
+                </div>
+                <p class="userAccount"></p>
+            </div>
+            <div class="searchBar">
+                <input type="search" name="search" id="searchInput">
+                <div class="basket">
+                    <a class="cartSup">
+                        <ion-icon name="cart-outline" size="large"></ion-icon>
+                        <span class="cartNum">0</span>
+                    </a>
+                    <span id="hover">cart</span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="../mobiles-pgs/mobiles.html" class="nav">Mobile Phones</a>
+            <hr>
+            <a href="../laptops-pgs/laptops.html" class="nav">Laptops</a>
+            <hr>
+            <a href="../refrigerators-pgs/ref.html" class="nav">Refrigerators</a>
+        </nav>
+    </header>
+    <section>
+        <div class="mainref"><img src="../images/refrigerators/refrig.png" width="100%" height="250px" alt=""></div>
+        <div class="productsList">
+            <div class="product">
+                <a href="haierTurbo.html">
+                    <div class="images"><img class="ref itemImage" src="../images/refrigerators/haier/haier1.png" width="180"
+                            height="250" alt=""></div>
+                    <p class="title">
+                        <span class="text textStyle"><span class="name"> Haier Blue Turbo</span> Cooling Refrigerator HRF-438 TBS/TBD/TBB Without
+                            Handle</span>
+                        <br>
+                        <span class="comp"> Haier</span> <br>
+                       Rs. <span class="itemPrice">44,000</span></span>
+                    </p>
+                </a>
+                <button class="addNow">Add To Cart</button>
+            </div>
+            <div class="product">
+                <a href="haierE-Star.html">
+                    <div class="images"><img class="ref itemImage" src="../images/refrigerators/haier/haier2.png" width="180"
+                            height="220" alt=""></div>
+                    <p class="title">
+                        <span class="text textStyle"><span class="name"> Haier E-Star</span> Refrigerator HRF-336 EBS/EBD Without Handle
+                        </span><br>
+                        <span class="comp"> Haier</span> <br>
+                        Rs. <span class="itemPrice">38,000</span>
+                    </p>
+                </a>
+                <button class="addNow">Add To Cart</button>
+            </div>
+            <div class="product">
+                <a href="pel1.html">
+                    <div class="images"><img class="ref itemImage" src="../images/refrigerators/pel/pel1.jpg" width="220"
+                            height="220" alt=""></div>
+                    <p class="title">
+                        <span class="text textStyle"><span class="name">
+                            PEL Glass Door</span> 2350 Purple Blaze
+                        </span><br>
+                        <span class="comp">Pel</span> <br>
+                        Rs. <span class="itemPrice">44,500</span>
+                    </p>
+                </a>
+                <button class="addNow">Add To Cart</button>
+            </div>
+            <div class="product">
+                <a href="pel2.html">
+                    <div class="images"><img class="ref itemImage" src="../images/refrigerators/pel/pel2.jpg" width="220"
+                            height="220" alt=""></div>
+                    <p class="title">
+                        <span class="text textStyle"><span class="name">
+                            PEL Glass Door</span> 2350 Pattern Mirror Impression
+                        </span><br><span class="comp">Pel</span> <br>
+                        Rs. <span class="itemPrice">44,500</span>
+                    </p>
+                </a>
+                <button class="addNow">Add To Cart</button>
+            </div>
+            <div class="product size">
+                <a href="orient1.html">
+                    <div class="images"><img class="ref itemImage" src="../images/refrigerators/orient/orient1.png" width="200"
+                            height="250" alt=""></div>
+                    <p class="title">
+                        <span class="text textStyle"><span class="name"> Orient Glass Door</span> Refrigerator Jade 500 Liters</span> <br><span
+                            class="comp">Orient</span> <br>
+                        Rs. <span class="itemPrice">50,000</span>
+                    </p>
+                </a>
+                <button class="addNow">Add To Cart</button>
+            </div>
+            <div class="product size">
+                <a href="orient2.html">
+                    <div class="images"><img class="ref itemImage" src="../images/refrigerators/orient/orient2.png" width="200"
+                            height="250" alt=""></div>
+                    <p class="title">
+                        <span class="text textStyle"><span class="name"> Orient Ice</span> Refrigerator 260 Liters</span> <br><span
+                            class="comp">Orient</span> <br>
+                        Rs. <span class="itemPrice">32,500</span>
+                    </p>
+                </a>
+                <button class="addNow">Add To Cart</button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>
+            Follow Us
+        </h1>
+        <div class="followLinks">
+            <div class="follow"><i class="fab fa-facebook-f social"></i></div>
+            <div class="follow"><i class="fab fa-twitter social"></i></div>
+            <div class="follow"><i class="fab fa-instagram social"></i></div>
+            <div class="follow"><i class="fab fa-youtube social"></i></div>
+        </div>
+        <p> &copy; Electrocity 2020</p>
+    </footer>
+    <script src="../products.js"></script>
+    <script src="../search.js"></script>
+    <script src="../header.js"></script>
+    <script src="https://kit.fontawesome.com/2e67fd70d7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.productsList{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.productsList a{
+    padding: 10px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-color: whitesmoke 1px solid;
+    width: 272px;
+    height: 347px;
+    margin: 50px;
+    text-align: center;
+    padding: 0;
+    position: relative;
+}
+.product button{
+    position: absolute;
+    bottom: 0px;
+    text-decoration: none;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    width: 270px;
+    height: 50px;
+    font-size: 20px;
+    background-color: rgb(37, 135, 247);
+    cursor: pointer;
+    color: white;
+    display: none;
+}
+.changeStyle{
+    height: 291px;
+}
+.btnWidth{
+    width: 280px !important;
+}
+.images{
+    height: 250px;
+}
+.imgSize img{
+    width: 220px;
+    height: 200px;
+}
+.productsList a{
+    border: 1px gray solid;
+    border-radius: 8px;
+}
+.productsList a:hover{
+    border: 1px gray solid;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px gray,-3px -3px 5px gray;
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+a:hover,.menu:hover{
+    cursor: pointer;
+}
+.textStyle{
+    display: inline-block;
+    width: 250px;
+    height: 20px;
+    overflow:hidden;
+}
+
+.mainlaptop{
+    width: 100%;
+}
+.comp{
+    color: rgb(13, 74, 189);
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+section{
+    font-size: 17px;
+}

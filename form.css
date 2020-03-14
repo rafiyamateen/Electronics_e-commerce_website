@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.inputs {
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: white 1px solid;
+    border-radius: 5px;
+    background-color: rgb(228, 231, 231);
+}
+.inputs:focus {
+    outline: none;
+    border: grey 1px solid;
+    box-shadow: 1px 1px 5px gray ,-1px -1px 5px gray;
+    background-color: rgb(184, 190, 207);
+}
+.inputs:hover{
+    border: rgb(97, 126, 201) 1px solid;
+}
+form button:hover {
+    opacity: 0.8;
+}
+form button,.close,.radio:hover {
+    cursor: pointer;
+}
+.close {
+    width: 30px;
+    height: 30px;
+    float: right;
+    text-align: center;
+}
+.close:hover {
+    font-size: 1.3em;
+    color: rgb(11, 53, 240);
+}
+.cancelBtn {
+    background-color: rgb(11, 53, 240);
+}
+.submitBtn {
+    background-color: rgb(11, 53, 240);
+}
+form button{
+    width: 50%;
+    color: white;
+    border: 0.5px solid white;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+.buttons{
+    display: flex;
+}
+hr {
+    border: 0.5px solid rgb(197, 193, 193);
+    margin: 10px 0 20px 0;
+}
+a {
+    text-decoration: none;
+}
+.signUpForm p{
+    margin-top: 15px;
+}
+#signUpModal,#loginModal {
+    border: black 2px solid;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgb(182, 178, 178), -2px -2px 5px rgb(182, 178, 178);
+    width: 550px;
+    min-width: 350px;
+    background-color: white;
+        align-self: center;
+}
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 20px;
+}
+#signUpModal{
+    margin-top: 10px;
+}
+#loginModal {
+    margin-top:5%;
+}
+.textAlign{
+    text-align: center;
+}
+form h1{
+    font-size: 32px;
+    font-weight: normal;
+    color: darkblue;
+}
+form a{
+    color: rgb(12, 12, 190);
+}
+form a:hover{
+    text-decoration: underline;
+}
+.basket {
+    margin-left: 70%;
+}
+#hover{
+    margin-left: 10%;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hp EliteBook 820</title>
+    <link rel="stylesheet" href="../slide.css">
+    <link rel="stylesheet" href="../head_foot.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+    </head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="logo">
+                <img src="../images/icons/logo.png" alt="" width="80" height="50">
+                <p>electrocity</p>
+            </div>
+            <div class="navbar menu" onclick="openNavBar()">
+                <span class="navbar"></span>
+                <span class="navbar"></span>
+                <span class="navbar"></span>
+            </div>
+        </div>
+        <div class="links">
+            <div class="headLinks">
+                <a class="home" href="../index.html">Home</a>
+                <a class='openSignup' onclick="openForm('../signUp.html')">Sign Up</a>
+                <a class="openLogin" onclick="openForm('../login.html')">Login</a>
+                <div><a class="logout">Logout</a>
+                    <span class="logoutConfirm">
+                        <p>Logout from your account <br><a class="cancel">Cancel</a><a class="ok">Ok</a></p>
+                    </span>
+                </div>
+                <p class="userAccount"></p>
+            </div>
+            <div class="searchBar">
+                <div class="basket">
+                    <a class="cartSup">
+                        <ion-icon name="cart-outline" size="large"></ion-icon>
+                        <span class="cartNum">0</span>
+                    </a>
+                    <span id="hover">cart</span>
+                </div>
+            </div>
+        </div>
+
+        <nav>
+            <a href="../mobiles-pgs/mobiles.html" class="nav">Mobile Phones</a>
+            <hr>
+            <a href="../laptops-pgs/laptops.html" class="nav">Laptops</a>
+            <hr>
+            <a href="../refrigerators-pgs/ref.html" class="nav">Refrigerators</a>
+        </nav>
+    </header>
+    <section>
+        <div class="itemSpec">
+            <div class="slider">
+                <div class="contain">
+                    <div class="slides">
+                        <div class="num">1/4</div><img id="itemImage" src="../images/laptops/hp/hp1.jpg" alt=""
+                            width='400'>
+                    </div>
+                    <div class="slides">
+                        <div class="num">2/4</div><img src="../images/laptops/hp/hp2.jpg" alt="" width='400'>
+                    </div>
+                    <div class="slides">
+                        <div class="num">3/4</div><img src="../images/laptops/hp/hp3.jpg" alt="" width='400'>
+                    </div>
+                    <div class="slides">
+                        <div class="num">4/4</div><img src="../images/laptops/hp/hp4.jpg" alt="" width='400'>
+                    </div>
+
+                </div>
+                <br>
+                <div class="slideShowImg">
+                    <span class="slideImg" onclick="current(1)"><img src="../images/laptops/hp/hp1.jpg" alt=""
+                            height="100" width="100"></span>
+                    <span class="slideImg" onclick="current(2)"><img src="../images/laptops/hp/hp2.jpg" alt=""
+                            height="100" width="100"></span>
+                    <span class="slideImg" onclick="current(3)"><img src="../images/laptops/hp/hp3.jpg" alt=""
+                            height="100" width="100"></span>
+                    <span class="slideImg" onclick="current(4)"><img src="../images/laptops/hp/hp4.jpg" alt=""
+                            height="100" width="100"></span>
+                </div>
+                <span class="prev" onclick="runSlides(-1);">&#10094;</span>
+                <span class="next" onclick="runSlides(1);">&#10095;</span>
+
+            </div>
+            <div class="detailSpec">
+                <p><b><span id="name">Hp EliteBook 820</span> G3- Intel Core i5 6th Gen - 8GB RAM - 180GB SSD
+                    </b> <br>
+                    HP <br>
+                    Rs.<span id="itemPrice">39,500</span><br>
+                </p>
+                <h3>
+                    Product details of Hp EliteBook 820 G3- Intel Core i5 6th Gen - 8GB RAM - 180GB SSD
+
+                </h3>
+                <ul>
+                    <li>12.5" HD LED (anti-glare)</li>
+                    <li>Intel® Core i5 6th Gen</li>
+                    <li>8GB DDR4</li>
+                    <li>180GB SSD</li>
+                    <li>Intel® HD Graphics 520</li>
+                    <li>HD Camera</li>
+                    <li>Trusted Platform Module (TPM 1.2) Security Chip</li>
+                    <li>Stereo speakers, two microphones</li>
+                    <li>Enhanced SpeedStep technology, Hyper-Threading Technology, Intel Smart Cache, Intel Turbo
+                        Boost Technology 2.0</li>
+                    <li>USB 3.1 Gen 1 (charging), USB 3.1 Gen,1USB-C, DisplayPort, VGA, LAN, Dock,
+                        Headphone/microphone combo jack</li>
+                    <li>Original Charger + Power Cord</li>
+                </ul>
+                <div>
+                    <span class="quan"> Quantity</span>
+                    <div class="buttons"><button id="minusQuantity">-</button><input type="text" value="1"
+                            class="quantity" id="itemQuantity">
+                        <button id="plusQuantity">+</button></div> <br>
+                    <div class="cartBtns"><button class="addToCartBtn">Add To Cart</button>
+                        <button class="checkOut">View Cart</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <h1>
+            Follow Us
+        </h1>
+        <div class="followLinks">
+            <div class="follow"><i class="fab fa-facebook-f social"></i></div>
+            <div class="follow"><i class="fab fa-twitter social"></i></div>
+            <div class="follow"><i class="fab fa-instagram social"></i></div>
+            <div class="follow"><i class="fab fa-youtube social"></i></div>
+        </div>
+        <p> &copy; Electrocity 2020</p>
+    </footer>
+    <script src="../slide.js"></script>
+    <script src="../header.js"></script>
+    <script src="https://kit.fontawesome.com/2e67fd70d7.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
