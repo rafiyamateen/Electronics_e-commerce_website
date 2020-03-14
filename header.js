@@ -40,6 +40,7 @@ function openForm(href) {
     window.location.href = href;
 }
 let logIn = JSON.parse(localStorage.getItem('loggedIn'));
+let slash = location.href.lastIndexOf('/');
 if (logIn) {
     document.getElementsByClassName('userAccount')[0].style.display = 'block';
     document.getElementsByClassName('userAccount')[0].innerText = logIn.username + "'s Account";
@@ -47,8 +48,8 @@ if (logIn) {
     document.getElementsByClassName('openSignup')[0].style.display = 'none';
     document.getElementsByClassName('logout')[0].style.display = 'block';
     document.getElementsByTagName('ion-icon')[0].onclick = () => {
-        if (location.pathname == '/index.html' || location.pathname == '/cart.html' || location.pathname == '/signUp.html' || location.pathname == '/login.html') {
-            window.location.assign('cart.html');
+        if (location.href.slice(slash) == '/index.html' || location.href.slice(slash) == '/cart.html') {
+            location.href = location.href.slice(0, slash) + '/cart.html';
         }
         else {
             window.location.assign('../cart.html');
@@ -57,8 +58,8 @@ if (logIn) {
 }
 else {
     document.getElementsByTagName('ion-icon')[0].onclick = () => {
-        if (location.pathname == '/index.html' || location.pathname == '/cart.html' || location.pathname == '/signUp.html' || location.pathname == '/login.html') {
-            window.location.assign('login.html');
+        if (location.href.slice(slash) == '/index.html' || location.href.slice(slash) == '/cart.html' || location.href.slice(slash) == '/signUp.html' || location.href.slice(slash) == '/login.html') {
+            location.href = location.href.slice(0, slash) + '/login.html';
         }
         else {
             window.location.assign('../login.html');

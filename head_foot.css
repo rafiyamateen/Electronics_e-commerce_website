@@ -135,7 +135,7 @@ flex-direction: column;
 }
 .headLinks a,.userAccount{
     border: 1px white solid;
-    padding: 10px;
+    padding: 10px 7px;
     text-align: center;
     margin-left: -70px;
 }
