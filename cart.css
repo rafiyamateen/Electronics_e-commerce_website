@@ -15,7 +15,7 @@ padding:10px 10px;
 }
 @media screen and (max-width:715px){
     td{
-        padding:10px 0px;
+        padding:10px 2px;
         }   
 }
 
@@ -94,6 +94,16 @@ color: white;
     font-size: 20px;
     padding: 0px 10px 0px 10px;
     border: none;
+}
+@media screen and (max-width:440px){
+    .minusQuantity{
+    padding: 0 4px 0 0;
+    background-color: white;
+}
+.plusQuantity{
+    padding: 0 0 0 4px;
+    background-color: white;
+}
 }
 .minusQuantity{
     margin-right: -20px;

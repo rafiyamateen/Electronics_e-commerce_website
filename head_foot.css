@@ -27,7 +27,7 @@ a{
     text-decoration: none;
     color: black;
 }
-.navbar:hover,a:hover{
+.fa-bars:hover,a:hover{
     cursor: pointer;
 }
 nav a {
@@ -115,15 +115,11 @@ margin: 5px 30px auto 20px;
     color: white;
     font-weight: bold;
 }
-.menu span{
-    display: flex;
-    align-items: flex-start;
-    border: 1px rgb(10, 93, 187) solid;
-    width: 20px;
-    margin: 3px 0px;
-}
+
 .menu{
     width: 25px;
+    margin-bottom: 5px;
+display: flex;    
 }
 .searchBar{
     display: flex;
@@ -173,7 +169,7 @@ flex-direction: column;
     width: 220px;
     top: 120px;
     right: 60%;
-    background-color: rgb(245, 236, 236);
+    background-color: white;
     padding: 5px;
     font-size: 18px;
     z-index: 1;
@@ -239,6 +235,22 @@ margin-left: auto;
         font-size: 26px;
     }
 }
+@media screen and (max-width:500px){
+    .headLinks a,.headLinks p{
+        font-size: 15px;
+        margin: 5px 10px 5px 0px;
+        padding: 0;
+    }
+    .headLinks{
+        margin-left: -30px;
+    }
+    table td{
+        font-size: 14px !important;
+    }
+    .logo p{
+        font-size: 20px;
+    }
+}
 footer{
     height: 250px;
     background-color: rgb(12, 12, 73);
@@ -285,4 +297,7 @@ footer p{
     font-size: 20px;
     margin-top: 50px;
     margin-left: 8%;
+}
+.fa-bars{
+    font-size: 20px;
 }

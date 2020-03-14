@@ -1,11 +1,11 @@
-let basket=document.getElementsByTagName('ion-icon'),
-spanBasket=document.getElementById('hover');
-basket[0].onmouseover=function(){
-    spanBasket.style.display='block';
+let basket = document.getElementsByTagName('ion-icon'),
+    spanBasket = document.getElementById('hover');
+basket[0].onmouseover = function () {
+    spanBasket.style.display = 'block';
 }
-basket[0].onmouseout=function(){
-    spanBasket.style.display='none';
-} 
+basket[0].onmouseout = function () {
+    spanBasket.style.display = 'none';
+}
 function openNavBar() {
     document.getElementsByTagName('nav')[0].style.width = '220px';
 }
@@ -16,22 +16,17 @@ function closeNavBar() {
 window.onclick = function () {
     let nav = document.getElementsByClassName('navbar'),
         logoutCnfrm = document.getElementsByClassName('logoutConfirm');
-    for (let i = 0; i < nav.length; i++) {
-        if (event.target == nav[i]) {
-            openNavBar();
-            document.getElementsByClassName('logoutConfirm')[0].style.display = '';
-            break;
-        }
-        else if (event.target == document.getElementsByClassName('logout')[0]) {
-            closeNavBar();
-            document.getElementsByClassName('logoutConfirm')[0].style.display = 'block';
-            break;
-        }
-        else if (event.target != logoutCnfrm[0] && event.target != logoutCnfrm[0].children[0] && event.target != logoutCnfrm[0].children[2]) {
-            closeNavBar();
-            document.getElementsByClassName('logoutConfirm')[0].style.display = '';
-            break;
-        }
+    if (event.target == nav[0] || event.target == document.getElementsByClassName('fas')[0]) {
+        openNavBar();
+        document.getElementsByClassName('logoutConfirm')[0].style.display = '';
+    }
+    else if (event.target == document.getElementsByClassName('logout')[0]) {
+        closeNavBar();
+        document.getElementsByClassName('logoutConfirm')[0].style.display = 'block';
+    }
+    else if (event.target != logoutCnfrm[0] && event.target != logoutCnfrm[0].children[0] && event.target != logoutCnfrm[0].children[2]) {
+        closeNavBar();
+        document.getElementsByClassName('logoutConfirm')[0].style.display = '';
     }
 }
 let totalQuantity = JSON.parse(localStorage.getItem('totalQuantity'));
@@ -52,12 +47,22 @@ if (logIn) {
     document.getElementsByClassName('openSignup')[0].style.display = 'none';
     document.getElementsByClassName('logout')[0].style.display = 'block';
     document.getElementsByTagName('ion-icon')[0].onclick = () => {
-        window.location.assign('../cart.html');
+        if (location.pathname == '/index.html' || location.pathname == '/cart.html' || location.pathname == '/signUp.html' || location.pathname == '/login.html') {
+            window.location.assign('cart.html');
+        }
+        else {
+            window.location.assign('../cart.html');
+        }
     }
 }
 else {
     document.getElementsByTagName('ion-icon')[0].onclick = () => {
-        window.location.assign('../login.html');
+        if (location.pathname == '/index.html' || location.pathname == '/cart.html' || location.pathname == '/signUp.html' || location.pathname == '/login.html') {
+            window.location.assign('login.html');
+        }
+        else {
+            window.location.assign('../login.html');
+        }
     }
 }
 document.getElementsByClassName('ok')[0].onclick = () => {
