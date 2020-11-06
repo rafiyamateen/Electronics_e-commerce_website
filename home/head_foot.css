@@ -3,6 +3,9 @@
     padding: 0;
     font-family: sans-serif,arial;
 }
+html,body{
+    overflow-x: hidden;
+}
 .searchBar input{
     background-image: url(images/icons/search.png);
     background-size: 40px;
@@ -254,7 +257,7 @@ margin-left: auto;
 footer{
     height: 250px;
     background-color: rgb(12, 12, 73);
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .follow{
 margin: 10px;

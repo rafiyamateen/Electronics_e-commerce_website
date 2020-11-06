@@ -90,7 +90,9 @@ font-weight: normal;
     align-self: center;
 }
 .slides img{
-    height: 400px;
+    max-height: 400px;
+    max-width: 400px;
+    min-width: 300px;
 }
 .slides {
     display: none;
@@ -122,7 +124,7 @@ font-weight: normal;
     border-radius: 0 3px 3px 0;
 }
 .next {
-    right: 0;
+    right: 35px;
     border-radius: 3px 0 0 3px;
 }
 .prev:hover,
